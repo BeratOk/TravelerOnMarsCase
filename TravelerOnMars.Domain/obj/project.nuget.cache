@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "uhPPuWCb/RbFxdapvrad1SikC4lM2ndeIpSApfDnmVmsDUXhUnGGJSdx7fN386vTmvmZqbd7brk6NKJ55GsqXg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Berat\\Desktop\\TravelerOnMars\\TravelerOnMars.Domain\\TravelerOnMars.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Berat\\.nuget\\packages\\csharpfunctionalextensions\\2.40.3\\csharpfunctionalextensions.2.40.3.nupkg.sha512"
+  ],
+  "logs": []
+}

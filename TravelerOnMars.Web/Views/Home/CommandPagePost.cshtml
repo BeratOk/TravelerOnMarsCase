@@ -1,0 +1,14 @@
+﻿@model ResultVM
+@{
+    ViewData["Title"] = "CommandPagePost";
+}
+
+<table class="table">
+    @foreach (var item in Model.Robots)
+    {
+        <tr>
+            <td>Robot @item.Id</td>
+            <td>@item.Position.Cordinate.X @item.Position.Cordinate.Y @item.Position.Direction.Name</td>
+        </tr>
+    }
+</table>

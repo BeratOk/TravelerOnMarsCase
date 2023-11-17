@@ -1,0 +1,42 @@
+﻿@model DataManager
+@{
+    ViewData["Title"] = "Home Page";
+}
+<form action="@Url.Action("StartPositionPost","Home")" method="post" id="start-position-form">
+    <h4>Input Kordinatlarını giriniz</h4>
+    <table>
+        <tr>
+            <td>X</td>
+            <td><input type="number" class="form-control" asp-for="@Model.UpCornerCordinate.X" /></td>
+        </tr>
+        <tr>
+            <td>Y</td>
+            <td><input type="number" class="form-control" asp-for="@Model.UpCornerCordinate.Y" /></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button type="submit" class="btn btn-primary">Devam</button>
+            </td>
+        </tr>
+    </table>
+</form>
+
+@section Scripts{
+    <script>
+        //$('start-position-form').on("submit", function() {
+        //    $.ajax({
+        //        url: '/startPositionPost',
+        //        method: 'POST',
+        //        data: $(this).serialize(),
+        //        success: function (response) {
+        //            if (response.isSuccess) {
+        //                location.href =
+        //            }
+        //            else {
+
+        //            }
+        //        }
+        //    });
+        //})
+    </script>
+}

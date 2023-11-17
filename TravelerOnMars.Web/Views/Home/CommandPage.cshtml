@@ -1,0 +1,97 @@
+﻿@using TravelerOnMars.Domain.ValueObjects;
+@model InputRequestModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+<form action="@Url.Action("CommandPagePost","Home")" method="post">
+    <h4>Başlangıç Kordinatlarını giriniz</h4>
+    <div class="row">
+        <div class="col-6">
+            <h4>Robot 1</h4>
+            <input type="hidden" asp-for="@Model.UpCornerCordinate.X" />
+            <input type="hidden" asp-for="@Model.UpCornerCordinate.Y" />
+            <table class="table">
+                <tr>
+                    <td>StartPosition X</td>
+                    <td><input type="text" asp-for="@Model.PositionOne.Cordinate.X" /></td>
+                </tr>
+                <tr>
+                    <td>StartPosition Y</td>
+                    <td><input type="text" asp-for="@Model.PositionOne.Cordinate.Y" /></td>
+                </tr>
+                <tr>
+                    <td>Cordinate 1</td>
+
+                    <td>
+                        <select asp-for="@Model.DirectionCodeOne">
+                            @foreach (var item in Direction.GetAllDirections())
+                            {
+                                <option value="@item.Code">@item.Name</option>
+                            }
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>CommandKeys</td>
+                    <td><input type="text" class="form-control command-keys" asp-for="@Model.CommandKeysOne" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-6">
+            <h4>Robot 2</h4><table class="table">
+
+                <tr>
+                    <td>StartPosition2 X</td>
+                    <td><input type="text" asp-for="@Model.PositionTwo.Cordinate.X" /></td>
+                </tr>
+                <tr>
+                    <td>StartPosition2 Y</td>
+                    <td><input type="text" asp-for="@Model.PositionTwo.Cordinate.Y" /></td>
+                </tr>
+                <tr>
+                    <td>Cordinate 1</td>
+
+                    <td>
+                        <select asp-for="@Model.DirectionCodeTwo">
+                            @foreach (var item in Direction.GetAllDirections())
+                            {
+                                <option value="@item.Code">@item.Name</option>
+                            }
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>CommandKeys</td>
+                    <td><input type="text" class="form-control command-keys" asp-for="@Model.CommandKeysTwo" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button type="submit" class="btn btn-primary">Devam</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+</form>
+
+@section Scripts{
+    <script>
+        $(function () {
+            $('.command-keys').keypress(function (e) {
+                var txt = String.fromCharCode(e.which);
+                console.log(txt + ' : ' + e.which);
+                var filterList = ['L', 'R', 'M']
+                if (!filterList.includes(txt)) {
+                    e.preventDefault();
+                }
+            });
+        });
+    </script>
+}
+

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34003.232
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TravelerOnMars.Web", "TravelerOnMars.Web\TravelerOnMars.Web.csproj", "{879E6298-E7FC-46DD-B135-C5BBC8DFA2EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TravelerOnMars.Domain", "TravelerOnMars.Domain\TravelerOnMars.Domain.csproj", "{55F3093F-9E3C-41E4-8213-01FA1E9867D3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{879E6298-E7FC-46DD-B135-C5BBC8DFA2EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{879E6298-E7FC-46DD-B135-C5BBC8DFA2EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{879E6298-E7FC-46DD-B135-C5BBC8DFA2EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{879E6298-E7FC-46DD-B135-C5BBC8DFA2EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55F3093F-9E3C-41E4-8213-01FA1E9867D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55F3093F-9E3C-41E4-8213-01FA1E9867D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55F3093F-9E3C-41E4-8213-01FA1E9867D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55F3093F-9E3C-41E4-8213-01FA1E9867D3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B05BE42C-3F33-4078-9A32-8E96644D77DC}
+	EndGlobalSection
+EndGlobal

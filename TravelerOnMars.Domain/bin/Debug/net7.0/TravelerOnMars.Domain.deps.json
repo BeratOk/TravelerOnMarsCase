@@ -1,0 +1,41 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "TravelerOnMars.Domain/1.0.0": {
+        "dependencies": {
+          "CSharpFunctionalExtensions": "2.40.3"
+        },
+        "runtime": {
+          "TravelerOnMars.Domain.dll": {}
+        }
+      },
+      "CSharpFunctionalExtensions/2.40.3": {
+        "runtime": {
+          "lib/net6.0/CSharpFunctionalExtensions.dll": {
+            "assemblyVersion": "2.40.3.0",
+            "fileVersion": "2.40.3.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TravelerOnMars.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CSharpFunctionalExtensions/2.40.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-G+t+bf39aixVFN3O3Q5LoE0zy3o8QlV3mv3ATw76XwDRWkE9eFRLzZdx9HH9fgbPpasfP4kr8cnnXIP+Z7GcrQ==",
+      "path": "csharpfunctionalextensions/2.40.3",
+      "hashPath": "csharpfunctionalextensions.2.40.3.nupkg.sha512"
+    }
+  }
+}

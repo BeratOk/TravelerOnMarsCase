@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\TravelerOnMars.Web.props" />
+</Project>
